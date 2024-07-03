@@ -1,0 +1,15 @@
+<div class="gallery">
+    @for (group of cowsByBreed; track group.raza) {
+      <div class="breed-group">
+        <h3>{{ group.raza }}</h3>
+        <div class="cow-list">
+          @for (cow of group.cows; track cow.id) {
+            <div class="cow-item">
+              <p><strong>Raza:</strong> {{ cow.raza }}</p>
+            </div>
+          }
+        </div>
+      </div>
+    }
+  </div>
+  

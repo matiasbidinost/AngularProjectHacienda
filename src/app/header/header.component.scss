@@ -1,0 +1,51 @@
+.custom-navbar {
+    background-color: #f8f9fa; /* Color de fondo personalizado */
+    border-bottom: 2px solid #e0a500; /* Línea inferior para dar contraste */
+}
+
+.navbar-brand {
+    font-family: 'Georgia', serif; /* Tipografía personalizada */
+    color: #4a4a4a; /* Color del texto */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-logo {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    font-family: 'Arial', sans-serif; /* Tipografía personalizada */
+    color: #4a4a4a; /* Color del texto */
+    margin-right: 15px;
+}
+
+.nav-link:hover {
+    color: #e0a500; /* Color del texto al pasar el mouse */
+}
+
+.nav-item .dropdown-menu {
+    background-color: #f8f9fa; /* Color de fondo del menú desplegable */
+}
+
+.dropdown-item {
+    color: #4a4a4a; /* Color del texto del menú desplegable */
+}
+
+.dropdown-item:hover {
+    background-color: #e0a500; /* Color de fondo al pasar el mouse */
+    color: white; /* Color del texto al pasar el mouse */
+}
+
+.btn-outline-success {
+    color: #4a4a4a; /* Color del texto */
+    border-color: #e0a500; /* Color del borde */
+}
+
+.btn-outline-success:hover {
+    background-color: #e0a500; /* Color de fondo al pasar el mouse */
+    border-color: #e0a500; /* Color del borde al pasar el mouse */
+    color: white; /* Color del texto al pasar el mouse */
+}

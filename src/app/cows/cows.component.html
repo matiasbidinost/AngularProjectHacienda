@@ -1,0 +1,22 @@
+<h1>Comprador de hacienda</h1>
+<div class="purchase-form">
+  <h2>Formulario de Compra</h2>
+  <div>
+    <label for="totalQuantity">Cantidad Total:</label>
+    <span id="totalQuantity">{{ totalQuantity() }}</span>
+  </div>
+  
+  <div>
+    <label for="finalPrice">Precio Final:</label>
+    <span id="finalPrice">{{ finalPrice() }}</span>
+  </div>
+
+  <button type="button" class="purchase-button" (click)="purchase()">Comprar</button>
+</div>
+
+<div class="cow-list">
+  @for (cow of cows; track cow.id) {
+    <app-cart [cow]="cow" (update)="updateCart($event.cow, $event.action)"></app-cart>
+  }
+</div>
+

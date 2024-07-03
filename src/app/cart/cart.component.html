@@ -1,0 +1,12 @@
+<li class="listCows">
+  <p><strong>Raza:</strong>{{cow.raza}}</p>
+  <p><strong>Stock:</strong> {{ cow.stock }}</p>
+  <p>@if (cow.stock == 0) {
+    <span class="badge-warning">Sin Stock disponible</span>
+  }</p>
+  <p><strong>Precio:</strong> {{ cow.precio }}</p>
+  <p><strong>Comprados </strong>
+    <button (click)="downSell()">-</button>{{ cow.vendidos }}
+    <button (click)="upSell()">+</button>
+  </p>
+</li>
